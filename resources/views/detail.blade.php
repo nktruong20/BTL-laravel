@@ -101,7 +101,7 @@
                                                     <span class="cart-plus"><i class="far fa-plus"></i></span>
                                                 </div>
                                                 <div class="product__details-btn">
-                                                    <a href="">add to cart</a>
+                                                    <a href="{{route('cart.add',$product->id)}}">add to cart</a>
                                                 </div>
                                             </div>
                                             <ul class="product__details-check">

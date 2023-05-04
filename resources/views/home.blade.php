@@ -109,7 +109,6 @@
 <x-product title="Nội thất phòng ngủ" :products="$bedProduct" />
 <x-product title="Nội thất phòng làm bếp" :products="$kitProduct" />
 <x-product title="Nội thất phòng làm việc" :products="$workProduct" />
-<x-product title="Đồ trang trí" :products="$decorProduct" />
 
 
 

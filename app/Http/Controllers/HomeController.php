@@ -14,11 +14,11 @@ class HomeController extends Controller
 {
     public function index()
     {
-        $bedProduct = Product::orderBy('id','DESC')->where('category_id',1)->limit(8)->get();
-        $kitProduct = Product::orderBy('id','DESC')->where('category_id',3)->limit(8)->get();
-        $workProduct = Product::orderBy('id','DESC')->where('category_id',4)->limit(8)->get();
+        $bedProduct = Product::orderBy('id','DESC')->where('category_id',2)->limit(8)->get();
+        $kitProduct = Product::orderBy('id','DESC')->where('category_id',4)->limit(8)->get();
+        $workProduct = Product::orderBy('id','DESC')->where('category_id',3)->limit(8)->get();
         $decorProduct = Product::orderBy('id','DESC')->where('category_id',5)->limit(8)->get();
-        $livingProduct = Product::orderBy('id','DESC')->where('category_id',2)->limit(8)->get();
+        $livingProduct = Product::orderBy('id','DESC')->where('category_id',1)->limit(8)->get();
         return view('home', compact('livingProduct','bedProduct','kitProduct','workProduct','decorProduct'));
     }
 
